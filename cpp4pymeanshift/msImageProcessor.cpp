@@ -160,6 +160,7 @@ msImageProcessor::~msImageProcessor( void )
 void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int width_)
 {
 
+    // data_ is byte *， type is a enum, height_,  width_
 	//obtain image dimension from image type
 	int dim;
 	if(type == COLOR)

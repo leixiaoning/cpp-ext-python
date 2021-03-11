@@ -105,6 +105,10 @@ int main()
     array = PyArray; //array = PythonArray;
 
     inputImage = PyArray_FROM_OTF(array, NPY_UBYTE, NPY_IN_ARRAY);
+
+    if (PyArray_Check(array)) { // this throws seg fault
+        cout << "PyArray_Check Passed" << endl;}
+
     if(PyArray_NDIM(inputImage) == 2)
     {
         nbDimensions = 2;
@@ -118,6 +122,7 @@ int main()
         dimensions[0] = PyArray_DIM(inputImage, 0);
         dimensions[1] = PyArray_DIM(inputImage, 1);
         dimensions[2] = 3;
+        cout << typeid(inputImage).name() << endl;
         imageSegmenter.DefineImage((unsigned char*)PyArray_DATA(inputImage), COLOR, dimensions[0], dimensions[1]);
     }
     else
