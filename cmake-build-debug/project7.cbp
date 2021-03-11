@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="project7"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/shanmu/CLionProjects/project7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/shanmu/CLionProjects/project7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/shanmu/CLionProjects/project7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project7">
+				<Option output="/Users/shanmu/CLionProjects/project7/cmake-build-debug/project7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/shanmu/CLionProjects/project7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCERES_FOUND"/>
+					<Add directory="/usr/local/Frameworks/Python.framework/Versions/3.9/include/python3.9"/>
+					<Add directory="/usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9/include"/>
+					<Add directory="/usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9/lib"/>
+					<Add directory="/Users/shanmu/CLionProjects/project7"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.1_3/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 project7"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project7/fast">
+				<Option output="/Users/shanmu/CLionProjects/project7/cmake-build-debug/project7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/shanmu/CLionProjects/project7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCERES_FOUND"/>
+					<Add directory="/usr/local/Frameworks/Python.framework/Versions/3.9/include/python3.9"/>
+					<Add directory="/usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9/include"/>
+					<Add directory="/usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9/lib"/>
+					<Add directory="/Users/shanmu/CLionProjects/project7"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.1_3/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 project7/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/project7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/RAList.cpp">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/RAList.h">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/ms.cpp">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/ms.h">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/msImageProcessor.cpp">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/msImageProcessor.h">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/rlist.cpp">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/rlist.h">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/tdef.h">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/main3.cpp">
+			<Option target="project7"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/shanmu/CLionProjects/project7/../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
