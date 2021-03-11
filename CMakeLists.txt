@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(project7)
+project(cpp-ext-python)
 
 set(SDK_VERSION 0_0_1)
 
@@ -28,11 +28,11 @@ link_directories(${PYTHON_ROOT}/lib/)
 
 include_directories("/Users/shanmu/CLionProjects/project7")
 
-add_executable(project7 main3.cpp
+add_executable(cpp-ext-python main3.cpp
         cpp4pymeanshift/ms.cpp cpp4pymeanshift/ms.h cpp4pymeanshift/msImageProcessor.cpp cpp4pymeanshift/msImageProcessor.h
         cpp4pymeanshift/RAList.cpp cpp4pymeanshift/RAList.h
         cpp4pymeanshift/rlist.cpp cpp4pymeanshift/rlist.h
         cpp4pymeanshift/tdef.h)
 
-target_link_libraries(project7 ${PYTHON_LIBRARIES})
-target_link_libraries(project7 ${OpenCV_LIBS})
+target_link_libraries(cpp-ext-python ${PYTHON_LIBRARIES})
+target_link_libraries(cpp-ext-python ${OpenCV_LIBS})

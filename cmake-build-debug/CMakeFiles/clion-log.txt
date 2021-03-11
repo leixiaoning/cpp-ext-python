@@ -1,5 +1,5 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/shanmu/CLionProjects/project7
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/shanmu/CLionProjects/cpp-ext-python
 python root: /usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/shanmu/CLionProjects/project7/cmake-build-debug
+-- Build files have been written to: /Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug

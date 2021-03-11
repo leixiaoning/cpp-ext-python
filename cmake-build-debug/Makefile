@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shanmu/CLionProjects/project7
+CMAKE_SOURCE_DIR = /Users/shanmu/CLionProjects/cpp-ext-python
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shanmu/CLionProjects/project7/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shanmu/CLionProjects/project7/cmake-build-debug/CMakeFiles /Users/shanmu/CLionProjects/project7/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/CMakeFiles /Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shanmu/CLionProjects/project7/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named project7
+# Target rules for targets named cpp-ext-python
 
 # Build rule for target.
-project7: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 project7
-.PHONY : project7
+cpp-ext-python: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpp-ext-python
+.PHONY : cpp-ext-python
 
 # fast build rule for target.
-project7/fast:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/build
-.PHONY : project7/fast
+cpp-ext-python/fast:
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/build
+.PHONY : cpp-ext-python/fast
 
 cpp4pymeanshift/RAList.o: cpp4pymeanshift/RAList.cpp.o
 
@@ -129,7 +129,7 @@ cpp4pymeanshift/RAList.o: cpp4pymeanshift/RAList.cpp.o
 
 # target to build an object file
 cpp4pymeanshift/RAList.cpp.o:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/RAList.cpp.o
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/RAList.cpp.o
 .PHONY : cpp4pymeanshift/RAList.cpp.o
 
 cpp4pymeanshift/RAList.i: cpp4pymeanshift/RAList.cpp.i
@@ -138,7 +138,7 @@ cpp4pymeanshift/RAList.i: cpp4pymeanshift/RAList.cpp.i
 
 # target to preprocess a source file
 cpp4pymeanshift/RAList.cpp.i:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/RAList.cpp.i
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/RAList.cpp.i
 .PHONY : cpp4pymeanshift/RAList.cpp.i
 
 cpp4pymeanshift/RAList.s: cpp4pymeanshift/RAList.cpp.s
@@ -147,7 +147,7 @@ cpp4pymeanshift/RAList.s: cpp4pymeanshift/RAList.cpp.s
 
 # target to generate assembly for a file
 cpp4pymeanshift/RAList.cpp.s:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/RAList.cpp.s
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/RAList.cpp.s
 .PHONY : cpp4pymeanshift/RAList.cpp.s
 
 cpp4pymeanshift/ms.o: cpp4pymeanshift/ms.cpp.o
@@ -156,7 +156,7 @@ cpp4pymeanshift/ms.o: cpp4pymeanshift/ms.cpp.o
 
 # target to build an object file
 cpp4pymeanshift/ms.cpp.o:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/ms.cpp.o
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/ms.cpp.o
 .PHONY : cpp4pymeanshift/ms.cpp.o
 
 cpp4pymeanshift/ms.i: cpp4pymeanshift/ms.cpp.i
@@ -165,7 +165,7 @@ cpp4pymeanshift/ms.i: cpp4pymeanshift/ms.cpp.i
 
 # target to preprocess a source file
 cpp4pymeanshift/ms.cpp.i:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/ms.cpp.i
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/ms.cpp.i
 .PHONY : cpp4pymeanshift/ms.cpp.i
 
 cpp4pymeanshift/ms.s: cpp4pymeanshift/ms.cpp.s
@@ -174,7 +174,7 @@ cpp4pymeanshift/ms.s: cpp4pymeanshift/ms.cpp.s
 
 # target to generate assembly for a file
 cpp4pymeanshift/ms.cpp.s:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/ms.cpp.s
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/ms.cpp.s
 .PHONY : cpp4pymeanshift/ms.cpp.s
 
 cpp4pymeanshift/msImageProcessor.o: cpp4pymeanshift/msImageProcessor.cpp.o
@@ -183,7 +183,7 @@ cpp4pymeanshift/msImageProcessor.o: cpp4pymeanshift/msImageProcessor.cpp.o
 
 # target to build an object file
 cpp4pymeanshift/msImageProcessor.cpp.o:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/msImageProcessor.cpp.o
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/msImageProcessor.cpp.o
 .PHONY : cpp4pymeanshift/msImageProcessor.cpp.o
 
 cpp4pymeanshift/msImageProcessor.i: cpp4pymeanshift/msImageProcessor.cpp.i
@@ -192,7 +192,7 @@ cpp4pymeanshift/msImageProcessor.i: cpp4pymeanshift/msImageProcessor.cpp.i
 
 # target to preprocess a source file
 cpp4pymeanshift/msImageProcessor.cpp.i:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/msImageProcessor.cpp.i
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/msImageProcessor.cpp.i
 .PHONY : cpp4pymeanshift/msImageProcessor.cpp.i
 
 cpp4pymeanshift/msImageProcessor.s: cpp4pymeanshift/msImageProcessor.cpp.s
@@ -201,7 +201,7 @@ cpp4pymeanshift/msImageProcessor.s: cpp4pymeanshift/msImageProcessor.cpp.s
 
 # target to generate assembly for a file
 cpp4pymeanshift/msImageProcessor.cpp.s:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/msImageProcessor.cpp.s
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/msImageProcessor.cpp.s
 .PHONY : cpp4pymeanshift/msImageProcessor.cpp.s
 
 cpp4pymeanshift/rlist.o: cpp4pymeanshift/rlist.cpp.o
@@ -210,7 +210,7 @@ cpp4pymeanshift/rlist.o: cpp4pymeanshift/rlist.cpp.o
 
 # target to build an object file
 cpp4pymeanshift/rlist.cpp.o:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/rlist.cpp.o
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/rlist.cpp.o
 .PHONY : cpp4pymeanshift/rlist.cpp.o
 
 cpp4pymeanshift/rlist.i: cpp4pymeanshift/rlist.cpp.i
@@ -219,7 +219,7 @@ cpp4pymeanshift/rlist.i: cpp4pymeanshift/rlist.cpp.i
 
 # target to preprocess a source file
 cpp4pymeanshift/rlist.cpp.i:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/rlist.cpp.i
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/rlist.cpp.i
 .PHONY : cpp4pymeanshift/rlist.cpp.i
 
 cpp4pymeanshift/rlist.s: cpp4pymeanshift/rlist.cpp.s
@@ -228,7 +228,7 @@ cpp4pymeanshift/rlist.s: cpp4pymeanshift/rlist.cpp.s
 
 # target to generate assembly for a file
 cpp4pymeanshift/rlist.cpp.s:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/cpp4pymeanshift/rlist.cpp.s
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/cpp4pymeanshift/rlist.cpp.s
 .PHONY : cpp4pymeanshift/rlist.cpp.s
 
 main3.o: main3.cpp.o
@@ -237,7 +237,7 @@ main3.o: main3.cpp.o
 
 # target to build an object file
 main3.cpp.o:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/main3.cpp.o
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/main3.cpp.o
 .PHONY : main3.cpp.o
 
 main3.i: main3.cpp.i
@@ -246,7 +246,7 @@ main3.i: main3.cpp.i
 
 # target to preprocess a source file
 main3.cpp.i:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/main3.cpp.i
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/main3.cpp.i
 .PHONY : main3.cpp.i
 
 main3.s: main3.cpp.s
@@ -255,7 +255,7 @@ main3.s: main3.cpp.s
 
 # target to generate assembly for a file
 main3.cpp.s:
-	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/main3.cpp.s
+	$(MAKE) -f CMakeFiles/cpp-ext-python.dir/build.make CMakeFiles/cpp-ext-python.dir/main3.cpp.s
 .PHONY : main3.cpp.s
 
 # Help Target
@@ -266,7 +266,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... project7"
+	@echo "... cpp-ext-python"
 	@echo "... cpp4pymeanshift/RAList.o"
 	@echo "... cpp4pymeanshift/RAList.i"
 	@echo "... cpp4pymeanshift/RAList.s"

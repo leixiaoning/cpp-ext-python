@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/RAList.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/RAList.h
 
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/ms.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/ms.h
 tdef.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/tdef.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/tdef.h
 
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/msImageProcessor.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/msImageProcessor.h
 ms.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/ms.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/ms.h
 rlist.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/rlist.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/rlist.h
 RAList.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/RAList.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/RAList.h
 
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/rlist.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/rlist.h
 tdef.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/tdef.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/tdef.h
 
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/tdef.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/tdef.h
 
-/Users/shanmu/CLionProjects/project7/main3.cpp
+/Users/shanmu/CLionProjects/cpp-ext-python/main3.cpp
 iostream
 -
 opencv2/opencv.hpp
@@ -38,7 +38,7 @@ python3.9/site-packages/numpy/core/include/numpy/arrayobject.h
 stdlib.h
 -
 cpp4pymeanshift/msImageProcessor.h
-/Users/shanmu/CLionProjects/project7/cpp4pymeanshift/msImageProcessor.h
+/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/msImageProcessor.h
 
 /usr/local/Cellar/opencv/4.5.1_3/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="project7"/>
+		<Option title="cpp-ext-python"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="project7">
-				<Option output="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/project7" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpp-ext-python">
+				<Option output="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/cpp-ext-python" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -58,14 +58,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 project7"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp-ext-python"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="project7/fast">
-				<Option output="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/project7" prefix_auto="0" extension_auto="0"/>
+			<Target title="cpp-ext-python/fast">
+				<Option output="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/cpp-ext-python" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -85,7 +85,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 project7/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 cpp-ext-python/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/shanmu/CLionProjects/cpp-ext-python/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -93,34 +93,34 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/RAList.cpp">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/RAList.h">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/ms.cpp">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/ms.h">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/msImageProcessor.cpp">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/msImageProcessor.h">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/rlist.cpp">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/rlist.h">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/cpp4pymeanshift/tdef.h">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/main3.cpp">
-			<Option target="project7"/>
+			<Option target="cpp-ext-python"/>
 		</Unit>
 		<Unit filename="/Users/shanmu/CLionProjects/cpp-ext-python/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
