@@ -157,10 +157,14 @@ msImageProcessor::~msImageProcessor( void )
 /*        the image segmenter class to be segmented.   */
 /*******************************************************/
 
-void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int width_)
+void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int width_) // byte 是 unsigned char
 {
 
     // data_ is byte *， type is a enum, height_,  width_
+    int aaa0 = sizeof(data_);
+    int aaa1 = sizeof(*data_);
+    // int aaa2 = strlen(data_); //444*956*3 =
+
 	//obtain image dimension from image type
 	int dim;
 	if(type == COLOR)
@@ -170,7 +174,7 @@ void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int
 
 	//perfor rgb to luv conversion
 	int		i;
-	float	*luv	= new float [height_*width_*dim];
+	float	*luv	= new float [height_*width_*dim]; // 分配一个一维数组的空间，数组长度是 h*w*dim
 	if(dim == 1)
 	{
 		for(i = 0; i < height_*width_; i++)
@@ -179,7 +183,7 @@ void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int
 	else
 	{
 		for(i = 0; i < height_*width_; i++)
-			RGBtoLUV(&data_[dim*i], &luv[dim*i]);
+			RGBtoLUV(&data_[dim*i], &luv[dim*i]); //传的是数组的相应索引的地址，用的时候索引是从0往数组最后
 	}
 
 	//define input defined on a lattice using mean shift base class
@@ -855,7 +859,7 @@ void msImageProcessor::Segment(int sigmaS, float sigmaR, int minRegion, SpeedUpL
 /*        result has been stored in luvVal.            */
 /*******************************************************/
 
-void msImageProcessor::RGBtoLUV(byte *rgbVal, float *luvVal)
+void msImageProcessor::RGBtoLUV(byte *rgbVal, float *luvVal) //这种传参方式是直接改变地址对应的值
 {
 
 	//delcare variables

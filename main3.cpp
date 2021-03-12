@@ -123,6 +123,8 @@ int main()
         dimensions[1] = PyArray_DIM(inputImage, 1);
         dimensions[2] = 3;
         cout << typeid(inputImage).name() << endl;
+        // PyArray_DATA 返回的是pyarray的字符数组
+        // strlen(PyArray_DATA(inputImage)); // 等于44*956*3，下面的参数传输的相当是地址
         imageSegmenter.DefineImage((unsigned char*)PyArray_DATA(inputImage), COLOR, dimensions[0], dimensions[1]);
     }
     else
