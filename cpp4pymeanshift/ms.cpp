@@ -433,12 +433,12 @@ void MeanShift::DefineInput(float *x, int L_, int N_)
 /*        equal the product ht*wt.                     */
 /*******************************************************/
 
-void MeanShift::DefineLInput(float *x, int ht, int wt, int N_)
+void MeanShift::DefineLInput(float *x, int ht, int wt, int N_) //初始化一张图片
 {
 	
 	//if input data is defined de-allocate memory, and
 	//re-initialize the input data structure
-	if((class_state.INPUT_DEFINED)||(class_state.LATTICE_DEFINED))
+	if((class_state.INPUT_DEFINED)||(class_state.LATTICE_DEFINED)) // 是否定义了相应的属性，bool默认的初始值是false
 		ResetInput();
 	
 	//Obtain lattice height and width
