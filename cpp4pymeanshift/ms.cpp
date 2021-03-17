@@ -449,7 +449,7 @@ void MeanShift::DefineLInput(float *x, int ht, int wt, int N_) //初始化一张
 	}
 	
 	//Obtain input data dimension
-	if((N = N_) <= 0)
+	if((N = N_) <= 0) //将N_赋值给N，默认是0
 	{
 		ErrorHandler("MeanShift", "DefineInput", "Input defined using zero or negative dimension.");
 		return;
@@ -457,7 +457,7 @@ void MeanShift::DefineLInput(float *x, int ht, int wt, int N_) //初始化一张
 	
 	//compute the data length, L, of input data set
 	//using height and width
-	L		= height*width;
+	L		= height*width; // 默认是0
 	
 	//Allocate memory for input data set, and copy
 	//x into the private data members of the mean
@@ -1413,7 +1413,7 @@ void MeanShift::InitializeInput(float *x)
 {
 	
 	//allocate memory for input data set
-	if(!(data = new float [L*N]))
+	if(!(data = new float [L*N])) // ms.h中声明了 data， 函数下面再赋值
 	{
 		ErrorHandler("MeanShift", "InitializeInput", "Not enough memory.");
 		return;
