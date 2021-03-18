@@ -38,6 +38,7 @@ Implemented by Chris M. Christoudias, Bogdan Georgescu
 //Kernel
 enum kernelType		{Uniform, Gaussian, UserDefined};
 
+
 // kd-Tree
 enum childType		{LEFT, RIGHT};
 

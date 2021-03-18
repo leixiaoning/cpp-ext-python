@@ -469,15 +469,15 @@ void MeanShift::DefineLInput(float *x, int ht, int wt, int N_) //初始化一张
 		return;
 
 	//allocate memory for weight map
-	if(!(weightMap = new float [L]))
+	if(!(weightMap = new float [L])) // new 分配空间但是不初始化
 	{
 		ErrorHandler("MeanShift", "InitializeInput", "Not enough memory.");
 		return;
 	}
-
+    //*weightMap 是 0
 	//initialize weightMap to an array of zeros
-	memset(weightMap, 0, L*(sizeof(float)));
-	
+	memset(weightMap, 0, L*(sizeof(float))); // memset 是c内置函数，可以说是初始化内存的“万能函数”
+    //*weightMap 是 0
 	//Indicate that a lattice input has recently been
 	//defined
 	class_state.LATTICE_DEFINED	= true;

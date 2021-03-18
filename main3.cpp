@@ -136,6 +136,12 @@ int main()
         return NULL;
     }
 
+    // test by lxn
+    enum kkklxn {k111, k222, k333};
+    kkklxn lxnk4;
+    lxnk4 = k111;
+    // end test
+
     // Create output images
     segmentedImage = (PyArrayObject *) PyArray_SimpleNew(nbDimensions, dimensions, PyArray_UBYTE);
     if(!segmentedImage)
