@@ -189,15 +189,17 @@ void MeanShift::DefineKernel(kernelType *kernel_, float *h_, int *P_, int kp_)
 		DestroyKernel();
 	
 	//Obtain kp...
-	if((kp = kp_) <= 0)
+	if((kp = kp_) <= 0) //赋值
 	{
 		ErrorHandler("MeanShift", "CreateKernel", "Subspace count (kp) is zero or negative.");
 		return;
 	}
 	
 	//Allocate memory for h, P, kernel, offset, and increment
-	if((!(P = new int [kp]))||(!(h = new float [kp]))||(!(kernel = new kernelType [kp]))||
-		(!(offset = new float [kp]))||(!(increment = new double [kp])))
+	if(
+	        (!(P = new int [kp])) || (!(h = new float [kp])) || (!(kernel = new kernelType [kp])) ||
+		(!(offset = new float [kp])) || (!(increment = new double [kp]))
+		)
 	{
 		ErrorHandler("MeanShift", "CreateKernel", "Not enough memory available to create kernel.");
 		return;

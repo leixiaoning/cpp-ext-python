@@ -194,7 +194,7 @@ void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int
 	if(!h)
 	{
 		//define default kernel paramerters...
-		kernelType	k[2]		= {Uniform, Uniform};
+		kernelType	k[2]		= {Uniform, Uniform}; //一维数组，每个元素是枚举型
 		int			P[2]		= {2, N};
 		float		tempH[2]	= {1.0 , 1.0};
 
@@ -203,7 +203,7 @@ void msImageProcessor::DefineImage(byte *data_, imageType type, int height_, int
 	}
 
 	//de-allocate memory
-	delete [] luv;
+	delete [] luv; //删除指针对象，且删除指向的所有内容
 
 	//done.
 	return;
