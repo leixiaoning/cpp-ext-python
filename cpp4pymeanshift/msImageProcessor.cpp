@@ -363,7 +363,7 @@ void msImageProcessor::Filter(int sigmaS, float sigmaR, SpeedUpLevel speedUpLeve
 	// (4) if the dimension of the kernel agrees with that
 	//     of the defined data set
 	// if not ... flag an error!
-	classConsistencyCheck(N+2, true);
+	classConsistencyCheck(N+2, true); //check一下
 	if(ErrorStatus == EL_ERROR)
 		return;
 
@@ -729,7 +729,7 @@ void msImageProcessor::Segment(int sigmaS, float sigmaR, int minRegion, SpeedUpL
 	{
 		ErrorHandler("msImageProcessor", "Segment", "Kernel corrupt or undefined.");
 		return;
-	}
+	} //check是否初始化
 
 	//Apply mean shift to data set using sigmaS and sigmaR...
 	Filter(sigmaS, sigmaR, speedUpLevel);
@@ -3290,7 +3290,10 @@ void msImageProcessor::InitializeOutput( void )
 	}
 
 	//Allocate memory used to store image modes and their corresponding regions...
-	if((!(modes = new float [L*(N+2)]))||(!(labels = new int [L]))||(!(modePointCounts = new int [L]))||(!(indexTable	= new int [L])))
+	if(
+	        (!(modes = new float [L*(N+2)])) || (!(labels = new int [L]))||
+	        (!(modePointCounts = new int [L])) || (!(indexTable	= new int [L]))
+	 )
 	{
 		ErrorHandler("msImageProcessor", "Allocate", "Not enough memory");
 		return;

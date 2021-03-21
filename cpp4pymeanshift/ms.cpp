@@ -199,7 +199,7 @@ void MeanShift::DefineKernel(kernelType *kernel_, float *h_, int *P_, int kp_)
 	if(
 	        (!(P = new int [kp])) || (!(h = new float [kp])) || (!(kernel = new kernelType [kp])) ||
 		(!(offset = new float [kp])) || (!(increment = new double [kp]))
-		)
+		) //P = new int[10]; kp应该是数据的维数
 	{
 		ErrorHandler("MeanShift", "CreateKernel", "Not enough memory available to create kernel.");
 		return;
@@ -222,7 +222,7 @@ void MeanShift::DefineKernel(kernelType *kernel_, float *h_, int *P_, int kp_)
 		}
 		kernel[i] = kernel_[i];
 		kN	   += P[i];
-	}
+	} //赋值
 	
 	//Allocate memory for range vector and uv using N_
 	if((!(range = new float [2*kN]))||(!(uv = new double [kN])))
