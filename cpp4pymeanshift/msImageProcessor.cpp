@@ -3893,6 +3893,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
       {
          sdata[idxs++] = (i%width)/sigmaS;
          sdata[idxs++] = (i/width)/sigmaS;
+         //上面这里两位就是相应像素的位置（第一个是在956中的idx，第二个是在444中的idx）（相当于分别是x，y）
          sdata[idxs++] = data[idxd++]/sigmaR;
          sdata[idxs++] = data[idxd++]/sigmaR;
          sdata[idxs++] = data[idxd++]/sigmaR;
