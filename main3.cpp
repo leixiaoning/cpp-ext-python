@@ -42,7 +42,7 @@ int main()
 
     Mat img = imread("/Users/shanmu/Desktop/hh.jpg");
 
-    PyObject *PythonArray = PyTuple_New(1);
+    //PyObject *PythonArray = PyTuple_New(1);
 
     auto sz = img.size();
     int x = sz.width;
@@ -69,7 +69,7 @@ int main()
 
     npy_intp Dims[3] = {y, x, z};
     PyObject *PyArray = PyArray_SimpleNewFromData(3, Dims, NPY_UBYTE, CArrays);
-    PyTuple_SetItem(PythonArray, 0, PyArray);
+    //PyTuple_SetItem(PythonArray, 0, PyArray);
 
     finish = clock();
     double used_time = finish - start;
