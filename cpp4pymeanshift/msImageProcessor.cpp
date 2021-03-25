@@ -4014,9 +4014,11 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 		// LatticeMSVector(Mh, yk); // modify to new
       /*****************************************************/
    	// Initialize mean shift vector
-	   for(j = 0; j < lN; j++)
+	  for(j = 0; j < lN; j++)
    		Mh[j] = 0;
-   	wsuml = 0;
+
+	  wsuml = 0;
+
       // uniformLSearch(Mh, yk_ptr); // modify to new
       // find bucket of yk
       cBuck1 = (int) yk[0] + 1;
