@@ -4037,11 +4037,11 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
             diff = el*el;
             el = sdata[idxs+1]-yk[1];
             diff += el*el;
-
-            if (diff < 1.0)
+            // (yk[0], yk[1]) 是当前点的位置坐标
+            if (diff < 1.0) // 漂移的带宽半径是1（放缩后的距离1，并不是原来的绝对位置的半径1）
             {
                el = sdata[idxs+2]-yk[2];
-               if (yk[2] > hiLTr)
+               if (yk[2] > hiLTr) // hiLTr是个阈值
                   diff = 4*el*el;
                else
                   diff = el*el;
@@ -4056,9 +4056,9 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 
                if (diff < 1.0)
                {
-                  weight = 1-weightMap[idxd];
+                  weight = 1-weightMap[idxd]; // 方向向量的权重？
                   for (k=0; k<lN; k++)
-                     Mh[k] += weight*sdata[idxs+k];
+                     Mh[k] += weight*sdata[idxs+k]; //Mh 是方向向量，5维，而不是3维
                   wsuml += weight;
 
       				//set basin of attraction mode table
