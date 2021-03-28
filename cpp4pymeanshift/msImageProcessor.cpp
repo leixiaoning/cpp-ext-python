@@ -3960,7 +3960,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 
       slist[i] = buckets[cBuck];
       buckets[cBuck] = i;
-
+      //slist为-1表示该cBuck对应的第一个点是自身，非-1，如330，则是于第330个点对应同一个cBuck
       idxs += lN;
    }
    // init bucNeigh
@@ -4006,16 +4006,16 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 		// Assign window center (window centers are
 		// initialized by createLattice to be the point
 		// data[i])
-      idxs = i*lN;
-      for (j=0; j<lN; j++)
-         yk[j] = sdata[idxs+j];
+        idxs = i*lN;
+        for (j=0; j<lN; j++)
+           yk[j] = sdata[idxs+j];
 		
 		// Calculate the mean shift vector using the lattice
 		// LatticeMSVector(Mh, yk); // modify to new
-      /*****************************************************/
-   	// Initialize mean shift vector
-	  for(j = 0; j < lN; j++)
-   		Mh[j] = 0;
+        /*****************************************************/
+   	    // Initialize mean shift vector
+	    for(j = 0; j < lN; j++)
+   	       Mh[j] = 0;
 
 	  wsuml = 0;
 
@@ -4027,9 +4027,9 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
       cBuck = cBuck1 + nBuck1*(cBuck2 + nBuck2*cBuck3);
       for (j=0; j<27; j++)
       {
-         idxd = buckets[cBuck+bucNeigh[j]];
+         idxd = buckets[cBuck+bucNeigh[j]]; //找到所谓的邻居点
          // list parse, crt point is cHeadList
-         while (idxd>=0)
+         while (idxd>=0) //不能是-1，-1表示是自己本身
          {
             idxs = lN*idxd;
             // determine if inside search window
@@ -4056,17 +4056,17 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 
                if (diff < 1.0)
                {
-                  weight = 1-weightMap[idxd]; // 方向向量的权重？
+                  weight = 1-weightMap[idxd]; // 方向向量的权重
                   for (k=0; k<lN; k++)
-                     Mh[k] += weight*sdata[idxs+k]; //Mh 是方向向量，5维，而不是3维
+                     Mh[k] += weight*sdata[idxs+k]; //Mh 是用来保存并计算方向向量的，5维，而不是3维
                   wsuml += weight;
 
       				//set basin of attraction mode table
                   if (diff < speedThreshold)
                   {
-				         if(modeTable[idxd] == 0)
+				         if(modeTable[idxd] == 0) //0 表示未被标记
 				         {
-         					pointList[pointCount++]	= idxd;
+         					pointList[pointCount++]	= idxd; // 保存已经被标记的点 的列表
 					         modeTable[idxd]	= 2;
       				   }
                   }
@@ -4079,7 +4079,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
    	{
 		   for(j = 0; j < lN; j++)
    			Mh[j] = Mh[j]/wsuml - yk[j];
-   	}
+   	} // 此刻 Mh 就是加权的均值向量
    	else
    	{
 		   for(j = 0; j < lN; j++)
@@ -4104,20 +4104,20 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 		// NOTE: iteration count is for speed up purposes only - it
 		//       does not have any theoretical importance
 		iterationCount = 1;
-		while((mvAbs >= EPSILON)&&(iterationCount < LIMIT))
+		while((mvAbs >= EPSILON)&&(iterationCount < LIMIT)) //EPSILON是漂移终点距离的阈值, LIMIT迭代次数上限100，两个条件是为了判断是否当前点i漂移结束
 		{
 			
-			// Shift window location
+			// Shift window location //终点
 			for(j = 0; j < lN; j++)
 				yk[j] += Mh[j];
 			
 			// check to see if the current mode location is in the
 			// basin of attraction...
 
-			// calculate the location of yk on the lattice
+			// calculate the location of yk on the lattice // 当前点的漂移终点
 			modeCandidateX	= (int) (sigmaS*yk[0]+0.5);
-			modeCandidateY	= (int) (sigmaS*yk[1]+0.5);
-			modeCandidate_i	= modeCandidateY*width + modeCandidateX;
+			modeCandidateY	= (int) (sigmaS*yk[1]+0.5); // modeCandidateX，modeCandidateY 是候选漂移终点的位置坐标，modeCandidate_i则是相应的在一维数据中的index位置
+			modeCandidate_i	= modeCandidateY*width + modeCandidateX; // modeCandidate_i是当前点的候选终点
 
 			// if mvAbs != 0 (yk did indeed move) then check
 			// location basin_i in the mode table to see if
@@ -4132,7 +4132,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 			//     to (modeTable[basin_i] = 1), so assign to
 			//     this data point the same mode as that of basin_i
 
-			if ((modeTable[modeCandidate_i] != 2) && (modeCandidate_i != i))
+			if ((modeTable[modeCandidate_i] != 2) && (modeCandidate_i != i)) // 候选终点不是自己本身
 			{
 				// obtain the data point at basin_i to
 				// see if it is within h*TC_DIST_FACTOR of
@@ -4177,7 +4177,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 						// update mode table for this data point
 						// indicating that a mode has been associated
 						// with it
-						modeTable[i] = 1;
+						modeTable[i] = 1; // 1表示漂移结束？
 
 						// indicate that a mode has been associated
 						// to this data point (data[i])
@@ -4280,7 +4280,7 @@ void msImageProcessor::NewOptimizedFilter2(float sigmaS, float sigmaR)
 			// Increment iteration count
 			iterationCount++;
 			
-		}
+		} //当前点i漂移结束
 
 		// if a mode was not associated with this data point
 		// yet associate it with yk...
